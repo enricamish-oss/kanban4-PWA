@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kanban4-PWA';
+const CACHE_NAME = 'kanban4-pwa';
 const ASSETS = [
   './',
   './DashBoardV8.html',
@@ -28,4 +28,5 @@ self.addEventListener('fetch', event => {
     caches.match(event.request).then(response => response || fetch(event.request))
   );
 });
+
 
